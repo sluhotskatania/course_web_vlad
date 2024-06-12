@@ -1,0 +1,32 @@
+.navbar-container{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(26, 157, 245);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar-container .navbar-sitename {
+    padding: 10px 20px;
+}
+
+.navbar-container .navbar-createBtn {
+    border: 1px solid rgb(35, 147, 203);
+    margin: 5px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.navbar-container .navbar-createBtn:hover {
+    border-color: rgb(51, 205, 222);
+    color: rgb(0, 234, 255);
+    background-color: #717171;
+    cursor: pointer;
+}
+
+.navbar-sitename {
+    cursor: pointer;
+}

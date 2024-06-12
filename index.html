@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/product_card.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/filter.css">
+    <link rel="stylesheet" href="./css/pagination.css">
+    
+    <title>Musical instrument</title>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div class="navbar-sitename" id="siteName">Musical instrument store</div>
+        <div class="navbar-createBtn" id="createBtn">Create Product</div>
+    </div>
+    
+   
+    <div class="filter-container">
+        <form class="filter-form">
+            <div class="filter-category">
+                <select class="form-select" id="filter-category">
+                    <option value="all">All categories</option>
+                    <option value="guitar">guitar</option>
+                    <option value="accordion">accordion</option>
+                    <option value="piano">piano</option>
+                    <option value="violin">violin</option>
+                    <option value="drum">drum</option>
+                    <option value="trumpet">trumpet</option>
+                </select>
+            </div>
+            <div class="filter-search">
+                <input class="form-control" id="filter-search" type="text" placeholder="-- search product --">
+            </div>
+            <div class="filter-sort">
+                <select class="form-select" id="filter-sort">
+                    <option selected value="nosort">sort products (Don't sort)</option>
+                    <option value="incPr">by increasing price</option>
+                    <option value="decPr">by decreasing price</option>
+                    <option value="nf">newest first</option>
+                    <option value="of">oldest first</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
+  
+    <div class="product-container">    </div>
+    
+    
+    <div class="pagination-container"> 
+        
+    </div>
+
+    
+    <div id="myModal" class="modal-overlay" data-close="true">
+        <div class="modal-content">
+            <span class="close" data-close="true">&times;</span>
+            <h2 class="modal-title" id="modalTitle">Create Product</h2>
+            <form id="productForm" name="productForm" class="productForm">
+                <input type="hidden" id="productId" name="productId">
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="material">Material:</label>
+                <input type="text" id="material" name="material" required>
+                
+                <label for="weight">Weight:</label>
+                <input type="text" id="weight" name="weight" required>
+    
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" required>
+    
+                <label for="discountPercentage">Discount:</label>
+                <input type="text" id="discountPercentage" name="discountPercentage" required>
+    
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" required>
+    
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option value="guitar">guitar</option>
+                    <option value="accordion">accordion</option>
+                    <option value="piano">piano</option>
+                    <option value="violin">violin</option>
+                    <option value="drum">drum</option>
+                    <option value="trumpet">trumpet</option>
+                </select>
+    
+                <label for="thumbnail">Link to picture:</label>
+                <input type="url" id="thumbnail" name="thumbnail" required>
+    
+                <input type="submit" value="Save Product">
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
